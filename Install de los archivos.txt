@@ -1,0 +1,5 @@
+El archivo config va en la raiz se modifica la linea 32
+El archivo index va en el directorio login se modifica a partir de la linea 329
+El archivo logout va en el directorio login se modifica todo el archivo, para ignorar otros plugins de redireccionamiento
+
+Los archivos sample van en una ubicacion diferente
