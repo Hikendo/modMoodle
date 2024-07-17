@@ -70,13 +70,11 @@ require_once($CFG->libdir . '/authlib.php');
 require_once($CFG->libdir . '/datalib.php');
 require_once($CFG->dirroot . '/user/lib.php');
 
-// Obtén el id del usuario
+// Obtener el id del usuario
 $userid = $USER->id;
 // Obtener todos los cursos en los que el usuario está inscrito.
 $user_courses = enrol_get_users_courses($userid);
 
-// Array para almacenar los roles en cada curso.
-$user_roles_in_courses = [];
 // Define las URLs de redirección según el rol
 $redirect_urls = array(
     'student' => 'http://127.0.0.1:8081/loginSample1.html',
@@ -84,9 +82,10 @@ $redirect_urls = array(
 );
 // Recorrer cada curso y obtener los roles del usuario en ese curso.
 foreach ($user_courses as $course) {
+    //verifica el rol del usuario por el id del curso
     $context = context_course::instance($course->id);
     $roles = get_user_roles($context, $userid);
-    // Si se encontraron roles, añadirlos al array.
+    // Si se encontraron roles,se recorren para buscar una coincidencia con nuestra lista de redireccion
     if (!empty($roles)) {
         // Redirige según el rol del usuario
             foreach ($roles as $role) {
@@ -95,12 +94,6 @@ foreach ($user_courses as $course) {
                     break;
                 }
             }
-    }
-    else{
-       // $redirect_url = $CFG->wwwroot.'/';
-
-       $redirect_url='http://127.0.0.1:8081/loginSample.html';
-
     }
 }
 
@@ -116,10 +109,6 @@ if (!isset($redirect_url)) {
     $redirect_url='http://127.0.0.1:8081/loginSample.html';
 }
 
-
-// Ahora puedes usar $userid en tu lógica de programación
-echo "El ID del usuario actual es: " . $userid ."<br>";
-echo "<br>".$redirect_url;
 //destruir la sesion
 require_logout();
 // Redirige al usuario
