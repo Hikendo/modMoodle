@@ -329,8 +329,9 @@ if (!empty($CFG->alternateloginurl) && $loginredirect) {
   // $loginurl = new moodle_url($CFG->alternateloginurl);
 
 //Bloque para que la redireccion del sitio tome la primera ruta
-  $urls = explode(',', $CFG->alternateloginurl);
+     $urls = explode(',', $CFG->alternateloginurl);
     $url=trim($urls[0]);
+  // $url='http://127.0.0.1:8081/loginSample.html';
     $loginurl = new moodle_url($url);
  //Aqui termina el bloque
     $loginurlstr = $loginurl->out(false);

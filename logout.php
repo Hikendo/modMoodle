@@ -67,31 +67,60 @@ redirect($redirect);
 
 require_once(__DIR__ . '/../config.php');
 require_once($CFG->libdir . '/authlib.php');
+require_once($CFG->libdir . '/datalib.php');
+require_once($CFG->dirroot . '/user/lib.php');
 
-// Obtén el rol del usuario
+// Obtén el id del usuario
 $userid = $USER->id;
-$context = context_system::instance();
-$roles = get_user_roles($context, $userid);
+// Obtener todos los cursos en los que el usuario está inscrito.
+$user_courses = enrol_get_users_courses($userid);
 
+// Array para almacenar los roles en cada curso.
+$user_roles_in_courses = [];
 // Define las URLs de redirección según el rol
 $redirect_urls = array(
-    'student' => 'http://tu-sitio.com/student-logout-page',
-    'teacher' => 'http://tu-sitio.com/teacher-logout-page'
+    'student' => 'http://127.0.0.1:8081/loginSample1.html',
+    'teacher' => 'http://127.0.0.1:8081/loginSample2.html'
 );
+// Recorrer cada curso y obtener los roles del usuario en ese curso.
+foreach ($user_courses as $course) {
+    $context = context_course::instance($course->id);
+    $roles = get_user_roles($context, $userid);
+    // Si se encontraron roles, añadirlos al array.
+    if (!empty($roles)) {
+        // Redirige según el rol del usuario
+            foreach ($roles as $role) {
+                if (isset($redirect_urls[$role->shortname])) {
+                    $redirect_url = $redirect_urls[$role->shortname];
+                    break;
+                }
+            }
+    }
+    else{
+       // $redirect_url = $CFG->wwwroot.'/';
 
-// Redirige según el rol del usuario
-foreach ($roles as $role) {
-    if (isset($redirect_urls[$role->shortname])) {
-        $redirect_url = $redirect_urls[$role->shortname];
-        break;
+       $redirect_url='http://127.0.0.1:8081/loginSample.html';
+
     }
 }
 
+
+
+
+
+
+
+
 // Si no se encuentra un rol específico, redirige a una página por defecto
 if (!isset($redirect_url)) {
-    $redirect_url = $CFG->wwwroot.'/';
+    $redirect_url='http://127.0.0.1:8081/loginSample.html';
 }
 
+
+// Ahora puedes usar $userid en tu lógica de programación
+echo "El ID del usuario actual es: " . $userid ."<br>";
+echo "<br>".$redirect_url;
+//destruir la sesion
 require_logout();
 // Redirige al usuario
 redirect($redirect_url);
