@@ -1,0 +1,10 @@
+username,password,firstname,lastname,email,city,country,auth,description,department,institution,phone1,phone2,address,course1,role1,group1
+student1,password123,John1,Doe1,jdoe1@example.com1,New York,US,manual,Description,LOMAS,UBM,555-1234,555-5678,123 Main St,test1,student,julio
+student2,password124,John2,Doe2,jdoe1@example.com2,New York,US,manual,Description,Chapultepec,UBM,555-1235,555-5679,124 Main St,test1,student,julio
+student3,password125,John3,Doe3,jdoe1@example.com3,New York,US,manual,,Aguascalientes,UBM,555-1236,555-5680,125 Main St,test1,student,julio
+student4,password126,John4,Doe4,jdoe1@example.com4,New York,US,manual,,Veracruz,UBM,555-1237,555-5681,126 Main St,test1,student,julio
+student5,password127,John5,Doe5,jdoe1@example.com5,New York,US,manual,,Sonora,UBM,555-1238,555-5682,127 Main St,test1,student,julio
+student6,password128,John6,Doe6,jdoe1@example.com6,Los Angeles,US,manual,,Veracruz,UBM,555-1239,555-5683,128 Main St,test1,student,julio
+student7,password129,John7,Doe7,jdoe1@example.com7,Los Angeles,US,manual,,Sonora,UBM,555-1240,555-5684,129 Main St,test1,student,julio
+student8,password130,John8,Doe8,jdoe1@example.com8,Los Angeles,US,manual,,LOMAS,UBM,555-1241,555-5685,130 Main St,test1,student,julio
+student9,password131,John9,Doe9,jdoe1@example.com9,Los Angeles,US,manual,,Chapultepec,UBM,555-1242,555-5686,131 Main St,test1,student,julio

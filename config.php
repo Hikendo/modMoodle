@@ -29,7 +29,7 @@ if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') {
 $CFG->dataroot  = '/bitnami/moodledata';
 $CFG->admin     = 'admin';
 //configura nuestras rutas de ingreso alternas $CFG->alternateloginurl, las separamos por una coma y la primera se tomara como base
-$CFG->alternateloginurl = 'http://127.0.0.1:8081/loginSample.html, http://127.0.0.1:8081/loginSample1.html, http://127.0.0.1:8081/loginSample2.html';  
+$CFG->alternateloginurl = 'http://127.0.0.1:5500/loginSample.html, http://127.0.0.1:5500/loginSample1.html, http://127.0.0.1:5500/loginSample2.html';  
 $CFG->directorypermissions = 02775;
 
 require_once(__DIR__ . '/lib/setup.php');
