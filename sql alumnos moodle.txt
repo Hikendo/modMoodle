@@ -1,0 +1,60 @@
+Para obtener todos los alumnos de un curso, todos los datos del alumno y las calificaciones de sus exámenes en Moodle, puedes usar una consulta SQL que combine varias tablas de la base de datos de Moodle. Aquí tienes un ejemplo de cómo podría ser esta consulta:
+
+SQL
+
+SELECT 
+    u.id AS user_id,
+    u.username,
+    u.firstname,
+    u.lastname,
+    u.email,
+    u.city,
+    u.country,
+    u.timezone,
+    u.department,
+    u.institution,
+    u.idnumber,
+    u.phone1,
+    u.phone2,
+    u.address,
+    c.id AS course_id,
+    c.fullname AS course_name,
+    gi.itemname AS exam_name,
+    gg.finalgrade AS exam_grade
+FROM 
+    mdl_user u
+JOIN 
+    mdl_role_assignments ra ON ra.userid = u.id
+JOIN 
+    mdl_context ctx ON ctx.id = ra.contextid
+JOIN 
+    mdl_course c ON c.id = ctx.instanceid
+JOIN 
+    mdl_grade_items gi ON gi.courseid = c.id
+JOIN 
+    mdl_grade_grades gg ON gg.itemid = gi.id AND gg.userid = u.id
+WHERE 
+    ra.roleid = 5 -- Role ID 5 typically corresponds to students
+    AND c.id = :courseid -- Replace :courseid with the actual course ID
+ORDER BY 
+    u.lastname, u.firstname, gi.itemname;
+Código generado por IA. Revisar y usar cuidadosamente. Más información sobre preguntas frecuentes.
+Descripción de la consulta:
+Tablas involucradas:
+mdl_user (u): Contiene los datos de los usuarios.
+mdl_role_assignments (ra): Relaciona usuarios con roles en contextos específicos.
+mdl_context (ctx): Define el contexto de los cursos.
+mdl_course ©: Contiene los datos de los cursos.
+mdl_grade_items (gi): Contiene los ítems de calificación (exámenes, tareas, etc.).
+mdl_grade_grades (gg): Contiene las calificaciones de los usuarios para los ítems de calificación.
+Condiciones:
+ra.roleid = 5: Filtra para obtener solo los usuarios con el rol de estudiante.
+c.id = :courseid: Filtra para obtener los datos del curso específico. Debes reemplazar :courseid con el ID del curso que te interesa.
+Orden:
+Ordena los resultados por apellido, nombre del usuario y nombre del ítem de calificación.
+Uso de la consulta:
+Reemplaza :courseid: Sustituye :courseid por el ID del curso del que deseas obtener los datos.
+Ejecuta la consulta: Puedes ejecutar esta consulta en tu herramienta de administración de bases de datos (como phpMyAdmin, MySQL Workbench, etc.).
+Esta consulta te proporcionará una lista de todos los estudiantes en el curso especificado, junto con todos sus datos y las calificaciones de sus exámenes.
+
+¿Hay algo más en lo que pueda ayudarte?

@@ -1,0 +1,3 @@
+username,password,firstname,lastname,email,city,country,timezone,auth,lang,description,department,institution,idnumber,phone1,phone2,address,course1,role1,group1,course2,role2,group2
+jdoe,password123,John,Doe,jdoe@example.com,New York,US,America/New_York,manual,en,Description,Department,Institution,1234567890,555-1234,555-5678,123 Main St,course1,student,group1,course2,teacher,group2
+asmith,password456,Anna,Smith,asmith@example.com,Los Angeles,US,America/Los_Angeles,manual,en,Description,Department,Institution,0987654321,555-8765,555-4321,456 Elm St,course3,student,group3,course4,teacher,group4
