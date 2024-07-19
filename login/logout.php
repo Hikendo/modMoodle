@@ -71,11 +71,11 @@ require_once($CFG->libdir . '/datalib.php');
 require_once($CFG->dirroot . '/user/lib.php');
 
 // Obtener el id del usuario
-$userid = $USER->id;
+$userid = $USER-> id;
 // Obtener todos los cursos en los que el usuario está inscrito.
 $user_courses = enrol_get_users_courses($userid);
 
-// Define las URLs de redirección según el rol
+// Define las URLs de redirección según el rol obtenidos del archivo config.php en la raiz
 $redirect_urls = $CFG->alternatelogouturl;
 // Recorrer cada curso y obtener los roles del usuario en ese curso.
 foreach ($user_courses as $course) {
@@ -95,13 +95,7 @@ foreach ($user_courses as $course) {
 }
 
 
-
-
-
-
-
-
-// Si no se encuentra un rol específico, redirige a una página por defecto
+// Si no se encuentra un rol específico, redirige a una página por defecto definido en el archivo config de la raiz
 if (!isset($redirect_url)) {
     $redirect_url=$CFG->alternateLogoutUrlDefaultRol;
 }

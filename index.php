@@ -328,12 +328,14 @@ if (!empty($CFG->alternateloginurl) && $loginredirect) {
     //La instruccion original
   // $loginurl = new moodle_url($CFG->alternateloginurl);
 
-//Bloque para que la redireccion del sitio tome la primera ruta
+//Inicia Bloque para que la redireccion del sitio tome la primera ruta
+    //tomamos nuestras rutas de $CFG->alternateloginurl y generamos un array al usar ',' como divisor
      $urls = explode(',', $CFG->alternateloginurl);
+     //enviamos el primer argumento como ruta default
     $url=trim($urls[0]);
-  // $url='http://127.0.0.1:8081/loginSample.html';
+    // $url='http://127.0.0.1:8081/loginSample.html';
     $loginurl = new moodle_url($url);
- //Aqui termina el bloque
+ //Aqui termina el bloque y continua el codigo original
     $loginurlstr = $loginurl->out(false);
 
     if ($SESSION->wantsurl != '' && strpos($SESSION->wantsurl, $loginurlstr) === 0) {
