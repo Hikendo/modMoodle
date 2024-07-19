@@ -76,10 +76,7 @@ $userid = $USER->id;
 $user_courses = enrol_get_users_courses($userid);
 
 // Define las URLs de redirección según el rol
-$redirect_urls = array(
-    'student' => 'http://127.0.0.1:5500/loginSample1.html',
-    'teacher' => 'http://127.0.0.1:5500/loginSample2.html',
-);
+$redirect_urls = $CFG->alternatelogouturl;
 // Recorrer cada curso y obtener los roles del usuario en ese curso.
 foreach ($user_courses as $course) {
     //verifica el rol del usuario por el id del curso
@@ -106,7 +103,7 @@ foreach ($user_courses as $course) {
 
 // Si no se encuentra un rol específico, redirige a una página por defecto
 if (!isset($redirect_url)) {
-    $redirect_url='http://127.0.0.1:5500/loginSample.html';
+    $redirect_url=$CFG->alternateLogoutUrlDefaultRol;
 }
 
 //destruir la sesion
