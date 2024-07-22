@@ -1,0 +1,10 @@
+username,password,firstname,lastname,email,city,country,auth,description,department,institution,phone1,phone2,address,course1,role1,group1
+student1,password123#A2A,John1,Doe1,jdoe1@example.com1,Toluca,MX,manual,Alumnos de prueba,Finanzas,UVM,555-1234,555-5678,123 Main St,Examen24MFP,student_exam ,julio
+student2,password123#A2A,John2,Doe2,jdoe1@example.com2,Queretaro,MX,manual,Alumnos de prueba,Hoteleria,UVM,555-1235,555-5679,124 Main St,Examen24MFP,student_exam ,julio
+student3,password123#A2A,John3,Doe3,jdoe1@example.com3,Puebla,MX,manual,Alumnos de prueba,Finanzas,UVM,555-1236,555-5680,125 Main St,Examen24MFP,student_exam ,julio
+student4,password123#A2A,John4,Doe4,jdoe1@example.com4,CD MX,MX,manual,Alumnos de prueba,Hoteleria,UVM,555-1237,555-5681,126 Main St,Examen24MFP,student_exam ,julio
+student5,password123#A2A,John5,Doe5,jdoe1@example.com5,CD MX,MX,manual,Alumnos de prueba,Finanzas,UVM,555-1238,555-5682,127 Main St,Examen24MFP,student_exam ,julio
+student6,password123#A2A,John6,Doe6,jdoe1@example.com6,CD MX,MX,manual,Alumnos de prueba,Hoteleria,UVM,555-1239,555-5683,128 Main St,Examen24MFP,student_exam ,julio
+student7,password123#A2A,John7,Doe7,jdoe1@example.com7,CD MX,MX,manual,Alumnos de prueba,Finanzas,UVM,555-1240,555-5684,129 Main St,Examen24MFP,student_exam ,julio
+student8,password123#A2A,John8,Doe8,jdoe1@example.com8,CD MX,MX,manual,Alumnos de prueba,Hoteleria,UVM,555-1241,555-5685,130 Main St,Examen24MFP,student_exam ,julio
+student9,password123#A2A,John9,Doe9,jdoe1@example.com9,CD MX,MX,manual,Alumnos de prueba,Hoteleria,UVM,555-1242,555-5686,131 Main St,Examen24MFP,student_exam ,julio
