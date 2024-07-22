@@ -1,57 +1,71 @@
 .navbar.fixed-top {
-    background-color: #ffc340 !important;
-    color: #666666  !important;
+  background-color: #ffc340 !important;
+  color: #666666 !important;
 }
 .primary-navigation .navigation .nav-link {
-    color: #666666 !important;
+  color: #666666 !important;
 }
 .secondary-navigation .moremenu .nav-tabs .nav-link {
-    color: #f3f1f1 !important;
+  color: #f3f1f1 !important;
 }
-.moremenu .nav-link.active:focus, .moremenu .nav-link.active:hover {
-    background-color: #ff9800  !important;
+.moremenu .nav-link.active:focus,
+.moremenu .nav-link.active:hover {
+  background-color: #ff9800 !important;
 }
-.moremenu .nav-link:hover, .moremenu .nav-link:focus {
-    border-color: transparent;
-    background-color: #ff9800  !important;
+.moremenu .nav-link:hover,
+.moremenu .nav-link:focus {
+  border-color: transparent;
+  background-color: #ff9800 !important;
 }
-.secondary-navigation .moremenu .nav-tabs .nav-link:hover, .secondary-navigation .moremenu .nav-tabs .nav-link:focus {
-    background-color: #B2A100 !important;
+.secondary-navigation .moremenu .nav-tabs .nav-link:hover,
+.secondary-navigation .moremenu .nav-tabs .nav-link:focus {
+  background-color: #b2a100 !important;
   border-bottom: 5px solid #ffc340 !important ;
-
-
 }
 #page-footer {
-    background-color:  #ffc340  !important;
+  background-color: #ffc340 !important;
+  color: #666666 !important;
 }
 .drawer-toggles .drawer-toggler .btn {
-    background-color:  #ffc340  !important;
-
+  background-color: #ffc340 !important;
 }
 .btn-primary {
-    background-color:  #ffc340  !important;
-
+  background-color: #ffc340 !important;
 }
 .navbar-light .navbar-nav .nav-link {
-    color: #666666  !important;
+  color: #666666 !important;
 }
 #page-footer .copyright .madeby {
-    visibility: hidden;
-
+  visibility: hidden;
 }
 #page-footer .copyright {
-    background-color: #666666 !important;
-    color: #666666 !important;
-
-
+  background-color: #666666 !important;
+  color: #666666 !important;
 }
 .navbar.fixed-top {
   border-bottom: 5px solid #ffc107 !important ;
-
 }
 .navbar.fixed-top .primary-navigation .navigation .nav-link.active {
-    border-bottom: 2px solid #ffc340 !important ;
+  border-bottom: 2px solid #ffc340 !important ;
 }
 .secondary-navigation .moremenu .nav-tabs .nav-link.active {
-    border-bottom: 2px solid #ffc340 !important ;
+  border-bottom: 2px solid #ffc340 !important ;
+}
+#page-footer a:not(.btn) {
+  color: #666666 !important;
+}
+.btn-primary {
+  color: #666666 !important;
+}
+#page-footer .contactsitesupport {
+  border: 1px solid #666666 !important;
+  color: #666666 !important;
+}
+.btn-outline-info:hover {
+  color: #fff;
+  background-color: #ff9800 !important;
+  border-color: #ff9800 !important;
+}
+.drawer-toggles .drawer-toggler .btn {
+  color: #666666 !important;
 }
