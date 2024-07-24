@@ -283,7 +283,7 @@ h2 {
   background-attachment: fixed;
 }
 .backColor {
-  background-color: #5d458b94;
+  background: linear-gradient(to left, #8b86a392, #322e40);
   height: 100vh;
 }
 .backColorLoginForm {
