@@ -33,7 +33,7 @@ a:hover {
 }
 
 .content {
-  padding: 7rem 0;
+  padding: 3rem 0;
 }
 
 h2 {
@@ -253,7 +253,7 @@ h2 {
 
 .control input:checked ~ .control__indicator:after {
   display: block;
-  color: #fff;
+  color: #333365;
 }
 
 .control--checkbox .control__indicator:after {
@@ -290,7 +290,7 @@ h2 {
 }
 .btnAafm {
   background-color: #ffc107;
-  color: black;
+  color: #333365;
 }
 .btnAafm:hover {
   background-color: #a98518;
