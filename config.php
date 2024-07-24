@@ -42,8 +42,8 @@ $CFG->alternateloginurl = '/general/, /amafore/, /examen/';
 
 //Nuestros roles que se usaran para redirigir a su correspondiente ruta  ejemplo '/cursos/' se traduce como http://localhost:8080/cursos/
 $CFG->alternatelogouturl = array(
-  'student_exam' => '/amafore/',
-  'student_amafore' => '/examen/'
+  'student_exam' => '/examen/',
+  'student_amafore' => '/amafore/'
 );
 
 //Nuestra ruta default para cualquier rol no definido en nuestros roles de redireccion
