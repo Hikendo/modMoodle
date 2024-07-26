@@ -1,4 +1,4 @@
-username,password,firstname,lastname,email,city,country,auth,theme�,description,department,institution,phone1,phone2,address,course1,role1,group1,sysrole1
+username,password,firstname,lastname,email,city,country,auth,theme,description,department,institution,phone1,phone2,address,course1,role1,group1,sysrole1
 student1,password123#A2A,John1,Doe1,jdoe1@example.com1,Toluca,MX,manual,certify,Alumnos de prueba,Finanzas,UVM,555-1234,555-5678,123 Main St,Examen24MFP,student_exam ,julio,student_exam 
 student2,password123#A2A,John2,Doe2,jdoe1@example.com2,Queretaro,MX,manual,certify,Alumnos de prueba,Hoteleria,UVM,555-1235,555-5679,124 Main St,Examen24MFP,student_exam ,julio,student_exam 
 student3,password123#A2A,John3,Doe3,jdoe1@example.com3,Puebla,MX,manual,certify,Alumnos de prueba,Finanzas,UVM,555-1236,555-5680,125 Main St,Examen24MFP,student_exam ,julio,student_exam 
