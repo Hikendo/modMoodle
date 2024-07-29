@@ -1,0 +1,71 @@
+.navbar.fixed-top {
+    background-color: #00365b !important;
+    color:hwb(0 100% 0%) !important;
+  }
+  .primary-navigation .navigation .nav-link {
+    color: hwb(0 100% 0%) !important;
+  }
+  .secondary-navigation .moremenu .nav-tabs .nav-link {
+    color: #f3f1f1 !important;
+  }
+  .moremenu .nav-link.active:focus,
+  .moremenu .nav-link.active:hover {
+    background-color: #00365f !important;
+  }
+  .moremenu .nav-link:hover,
+  .moremenu .nav-link:focus {
+    border-color: transparent;
+    background-color: #00365f !important;
+  }
+  .secondary-navigation .moremenu .nav-tabs .nav-link:hover,
+  .secondary-navigation .moremenu .nav-tabs .nav-link:focus {
+    background-color: #01487e !important;
+    border-bottom: 5px solid #00365b !important ;
+  }
+  #page-footer {
+    background-color: #00365b !important;
+    color: hwb(0 100% 0%) !important;
+  }
+  .drawer-toggles .drawer-toggler .btn {
+    background-color: #00365b !important;
+  }
+  .btn-primary {
+    background-color: #00365b !important;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: hwb(0 100% 0%) !important;
+  }
+  #page-footer .copyright .madeby {
+    visibility: hidden;
+  }
+  #page-footer .copyright {
+    background-color: #666666 !important;
+    color: hwb(0 100% 0%) !important;
+  }
+  .navbar.fixed-top {
+    border-bottom: 5px solid #00365f !important ;
+  }
+  .navbar.fixed-top .primary-navigation .navigation .nav-link.active {
+    border-bottom: 2px solid #00365b !important ;
+  }
+  .secondary-navigation .moremenu .nav-tabs .nav-link.active {
+    border-bottom: 2px solid #00365b !important ;
+  }
+  #page-footer a:not(.btn) {
+    color: hwb(0 100% 0%) !important;
+  }
+  .btn-primary {
+    color: hwb(0 100% 0%) !important;
+  }
+  #page-footer .contactsitesupport {
+    border: 1px solid #666666 !important;
+    color:hwb(0 100% 0%) !important;
+  }
+  .btn-outline-info:hover {
+    color: #fff;
+    background-color: #00365f !important;
+    border-color: #00365f !important;
+  }
+  .drawer-toggles .drawer-toggler .btn {
+      color: hwb(0 100% 0%) !important;
+  }
