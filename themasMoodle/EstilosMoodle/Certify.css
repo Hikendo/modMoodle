@@ -1,0 +1,55 @@
+.navbar.fixed-top {
+    background-color: rgb(51, 51, 101) !important;
+    color: white  !important;
+}
+.primary-navigation .navigation .nav-link {
+    color: white !important;
+}
+.secondary-navigation .moremenu .nav-tabs .nav-link {
+    color: rgb(51, 51, 101) !important;
+}
+.moremenu .nav-link.active:focus, .moremenu .nav-link.active:hover {
+    background-color: rgb(51, 51, 140)  !important;
+    border-bottom-color: #002147;
+}
+.moremenu .nav-link:hover, .moremenu .nav-link:focus {
+    border-color: transparent;
+    background-color: rgb(51, 51, 140)  !important;
+}
+.secondary-navigation .moremenu .nav-tabs .nav-link:hover, .secondary-navigation .moremenu .nav-tabs .nav-link:focus {
+    background-color: #B2A100 !important;
+  border-bottom: 5px solid rgb(51, 51, 101) !important ;
+
+
+}
+#page-footer {
+    background-color:  rgb(51, 51, 101)  !important;
+}
+.drawer-toggles .drawer-toggler .btn {
+    background-color:  rgb(51, 51, 101)  !important;
+
+}
+.btn-primary {
+    background-color:  rgb(51, 51, 101)  !important;
+
+}
+.navbar-light .navbar-nav .nav-link {
+    color: white  !important;
+}
+#page-footer .copyright .madeby {
+    visibility: hidden;
+}
+#page-footer .copyright {
+    background-color: #ffc107 !important;
+
+}
+.navbar.fixed-top {
+  border-bottom: 5px solid #ffc107 !important ;
+
+}
+.navbar.fixed-top .primary-navigation .navigation .nav-link.active {
+    border-bottom: 2px solid rgb(51, 51, 101) !important ;
+}
+.secondary-navigation .moremenu .nav-tabs .nav-link.active {
+    border-bottom: 2px solid rgb(51, 51, 101) !important ;
+}

@@ -1,0 +1,10 @@
+username,password,firstname,lastname,email,city,country,auth,theme,description,department,institution,phone1,phone2,address,course1,role1,group1,sysrole1
+student1,password123#A2A,John,Constantine,jdoe1@example.com1,Toluca,MX,manual,certify,Alumnos de prueba,Finanzas,UVM,555-1234,555-5678,123 Main St,Examen24MFP-test,student_exam ,julio,student_exam 
+student2,password123#A2A,Gerardo,Fuentes,jdoe1@example.com2,Queretaro,MX,manual,certify,Alumnos de prueba,Hoteleria,UVM,555-1235,555-5679,124 Main St,Examen24MFP-test,student_exam ,julio,student_exam 
+student3,password123#A2A,Gonzalo,Herrera,jdoe1@example.com3,Puebla,MX,manual,certify,Alumnos de prueba,Finanzas,UVM,555-1236,555-5680,125 Main St,Examen24MFP-test,student_exam ,julio,student_exam 
+student4,password123#A2A,Juan,Benavides,jdoe1@example.com4,CD MX,MX,manual,certify,Alumnos de prueba,Hoteleria,UVM,555-1237,555-5681,126 Main St,Examen24MFP-test,student_exam ,julio,student_exam 
+student5,password123#A2A,Leon,Gutierrez,jdoe1@example.com5,CD MX,MX,manual,certify,Alumnos de prueba,Finanzas,UVM,555-1238,555-5682,127 Main St,Examen24MFP-test,student_exam ,julio,student_exam 
+student6,password123#A2A,Camila,Paz,jdoe1@example.com6,CD MX,MX,manual,amafore,Alumnos de prueba,Hoteleria,UVM,555-1239,555-5683,128 Main St,Examen24MFP-test,student_exam ,julio,student_amafore
+student7,password123#A2A,Magdalena,Fuentes,jdoe1@example.com7,CD MX,MX,manual,amafore,Alumnos de prueba,Finanzas,UVM,555-1240,555-5684,129 Main St,Examen24MFP-test,student_exam ,julio,student_amafore
+student8,password123#A2A,Jazmin,Espinoza,jdoe1@example.com8,CD MX,MX,manual,amafore,Alumnos de prueba,Hoteleria,UVM,555-1241,555-5685,130 Main St,Examen24MFP-test,student_exam ,julio,student_amafore
+student9,password123#A2A,Ruth,Morales,jdoe1@example.com9,CD MX,MX,manual,amafore,Alumnos de prueba,Hoteleria,UVM,555-1242,555-5686,131 Main St,Examen24MFP-test,student_exam ,julio,student_amafore

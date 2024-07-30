@@ -1,0 +1,20 @@
+// Import all scss amafore files.
+@import "amafore/transitions";
+@import "amafore/variables";
+@import "../../boost/scss/preset/default";
+@import "amafore/general";
+@import "amafore/pages";
+@import "amafore/blocks";
+@import "amafore/drawers";
+@import "amafore/navbar";
+@import "amafore/footer";
+@import "amafore/breadcrumb";
+@import "amafore/course";
+@import "amafore/mixins/accessibilityfontsize";
+@import "amafore/accessibilitybar";
+@import "amafore/accessibilitystyles";
+@import "amafore/login";
+@import "amafore/mydashboard";
+@import "amafore/frontpage";
+@import "amafore/profile";
+@import "amafore/enrol";
